@@ -47,7 +47,7 @@
             </li>
             <li>
                 <a href="server.html">服务项目</a>
-                <dl>
+                <dl class="server">
                     <dd><a href="javascript:;" target="_blank" title="商标">商标</a></dd>
                     <dd><a href="javascript:;" target="_blank" title="专利代理">专利代理</a></dd>
                     <dd><a href="javascript:;" target="_blank" title="版权">版权</a></dd>
@@ -205,6 +205,15 @@
 <script>
     $(function () {
         $("#bannerFir").banner("json/banner-data.json", 5000);
+    });
+</script>
+<script>
+    $(function () {
+        $('.server dd').click(function () {
+            //上线之后改为http://www.sgxh.cn/sgxh/server.html
+            var _index = $(this).index();
+            window.location.href = 'http://localhost:63342/sgxh/server.html?index='+ _index;
+        })
     });
 </script>
 </body>

@@ -275,5 +275,16 @@
         $('.server-content').pluginTab();
     })
 </script>
+<script>
+    $(function () {
+        var url = window.location.search;
+        var loc = url.substring(url.lastIndexOf('=')+1, url.length);
+        //console.log(typeof loc); //string
+        //console.log($('.tab dd').eq(loc).index()); //2
+        $('.server-content').pluginTab({
+            initIndex: loc
+        });
+    })
+</script>
 </body>
 </html>

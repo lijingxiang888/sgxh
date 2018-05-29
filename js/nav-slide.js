@@ -5,3 +5,4 @@ $(function () {
          $(this).children('dl').stop().slideUp(200);
     })
 });
+

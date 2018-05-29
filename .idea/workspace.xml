@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2b6ce60b-5698-4be5-ab48-3965fe089619" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change beforePath="$PROJECT_DIR$/js/nav-slide.js" afterPath="$PROJECT_DIR$/js/nav-slide.js" />
+      <change beforePath="$PROJECT_DIR$/less/common.less" afterPath="$PROJECT_DIR$/less/common.less" />
+      <change beforePath="$PROJECT_DIR$/server.html" afterPath="$PROJECT_DIR$/server.html" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Less File" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/sgxh/data/banner-data.json" />
+        <option value="$PROJECT_DIR$/sgxh/json/banner-data.json" />
+        <option value="$PROJECT_DIR$/sgxh/js/index.js" />
+        <option value="$PROJECT_DIR$/sgxh/js/banner.js" />
+        <option value="$PROJECT_DIR$/sgxh/less/reset.less" />
+        <option value="$PROJECT_DIR$/sgxh/less/index.less" />
+        <option value="$PROJECT_DIR$/sgxh/js/tab.min.js" />
+        <option value="$PROJECT_DIR$/sgxh/js/tab.js" />
+        <option value="$PROJECT_DIR$/sgxh/js/pluginTab.min.js" />
+        <option value="$PROJECT_DIR$/sgxh/server-shangbiao.html" />
+        <option value="$PROJECT_DIR$/sgxh/less/common.less" />
+        <option value="$PROJECT_DIR$/sgxh/server.html" />
+        <option value="$PROJECT_DIR$/sgxh/team.html" />
+        <option value="$PROJECT_DIR$/sgxh/case.html" />
+        <option value="$PROJECT_DIR$/sgxh/less/layout.less" />
+        <option value="$PROJECT_DIR$/sgxh/index.html" />
+        <option value="$PROJECT_DIR$/sgxh/js/nav-slide.js" />
+        <option value="$PROJECT_DIR$/less/common.less" />
+        <option value="$PROJECT_DIR$/js/nav-slide.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/server.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1340" />
+    <option name="height" value="688" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="sgxh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sgxh" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sgxh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sgxh" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sgxh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sgxh" type="462c0819:PsiDirectoryNode" />
+              <item name="less" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="list.type.of.created.stylesheet" value="Less" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator.USER-20120726XC\Desktop\sgxh\sgxh\images" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator.USER-20120726XC\Desktop\sgxh\sgxh\images" />
+      <recent name="C:\Users\Administrator.USER-20120726XC\Desktop\sgxh\sgxh" />
+      <recent name="C:\Users\Administrator.USER-20120726XC\Desktop\sgxh\sgxh\js" />
+      <recent name="C:\Users\Administrator.USER-20120726XC\Desktop\sgxh\sgxh\json" />
+      <recent name="C:\Users\Administrator.USER-20120726XC\Desktop\sgxh\sgxh\css" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2b6ce60b-5698-4be5-ab48-3965fe089619" name="Default" comment="" />
+      <created>1527470511548</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1527470511548</updated>
+      <workItem from="1527470514538" duration="29786000" />
+      <workItem from="1527551199869" duration="32424000" />
+      <workItem from="1527586814574" duration="2477000" />
+    </task>
+    <task id="LOCAL-00001" summary="添加index.html">
+      <created>1527470612026</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1527470612026</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="64687000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20441176" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5404531" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="添加index.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加index.html" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/sgxh/index.html" />
+    <entry file="file://$PROJECT_DIR$/sgxh/less/index.less" />
+    <entry file="file://$PROJECT_DIR$/sgxh/js/html5.min.js" />
+    <entry file="file://$PROJECT_DIR$/sgxh/css/reset.min.css" />
+    <entry file="file://$PROJECT_DIR$/sgxh/da/banner-data.json" />
+    <entry file="file://$PROJECT_DIR$/sgxh/images/banner1.jpg" />
+    <entry file="file://$PROJECT_DIR$/sgxh/js/jquery-1.11.3.min.js" />
+    <entry file="file://$PROJECT_DIR$/sgxh/js/less-2.5.3.min.js" />
+    <entry file="file://$PROJECT_DIR$/sgxh/json/banner-data.json" />
+    <entry file="file://$PROJECT_DIR$/sgxh/js/banner.js" />
+    <entry file="file://$PROJECT_DIR$/sgxh/images/honor-mark.jpg" />
+    <entry file="file://$PROJECT_DIR$/sgxh/less/reset.less" />
+    <entry file="file://$PROJECT_DIR$/sgxh/images/erweima.jpg" />
+    <entry file="file://$PROJECT_DIR$/sgxh/js/tab.min.js" />
+    <entry file="file://$PROJECT_DIR$/sgxh/less/index.less" />
+    <entry file="file://$PROJECT_DIR$/sgxh/js/pluginTab.min.js" />
+    <entry file="file://$PROJECT_DIR$/sgxh/js/tab.js" />
+    <entry file="file://$PROJECT_DIR$/sgxh/images/server-banner.jpg" />
+    <entry file="file://$PROJECT_DIR$/sgxh/images/partner1.jpg" />
+    <entry file="file://$PROJECT_DIR$/sgxh/team.html" />
+    <entry file="file://$PROJECT_DIR$/sgxh/case.html" />
+    <entry file="file://$PROJECT_DIR$/sgxh/less/common.less" />
+    <entry file="file://$PROJECT_DIR$/sgxh/less/layout.less" />
+    <entry file="file://$PROJECT_DIR$/sgxh/server.html" />
+    <entry file="file://$PROJECT_DIR$/sgxh/js/nav-slide.js" />
+    <entry file="file://$PROJECT_DIR$/sgxh/index.html" />
+    <entry file="file://$PROJECT_DIR$/less/common.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="152" column="20" lean-forward="false" selection-start-line="152" selection-start-column="20" selection-end-line="152" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/nav-slide.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/pluginTab.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="284" column="26" lean-forward="false" selection-start-line="284" selection-start-column="26" selection-end-line="284" selection-end-column="26" />
+          <folding>
+            <marker date="1527589195453" expanded="true" signature="706:859" ph="..." />
+            <marker date="1527589195453" expanded="true" signature="714:852" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="214" column="92" lean-forward="false" selection-start-line="214" selection-start-column="92" selection-end-line="214" selection-end-column="92" />
+          <folding>
+            <marker date="1527588443759" expanded="true" signature="719:872" ph="..." />
+            <marker date="1527588443759" expanded="true" signature="727:865" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
