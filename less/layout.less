@@ -1,0 +1,257 @@
+@import "common";
+
+/*页面都用到了面包导航*/
+.crumbs {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 122px;
+  box-sizing: border-box;
+
+  a {
+    .transition();
+    color: #333;
+
+    &:hover {
+      color: #0080ff;
+    }
+  }
+}
+
+/*左侧侧边导航+右侧内容公共样式*/
+.pub-content() {
+  width: 1105px;
+  height: auto;
+  margin: 0 auto;
+  overflow: hidden;
+
+  dl {
+    float: left;
+    width: 180px;
+    background-color: #eee;
+    dd {
+      height: 45px;
+      width: 100%;
+      line-height: 45px;
+      text-align: center;
+      color: #333;
+      cursor: pointer;
+      .transition();
+
+      &:hover {
+        color: #0080ff;
+      }
+    }
+
+    dd.select {
+      color: #fff;
+      background-color: #eeac24;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}
+
+/*服务项目栏目样式*/
+.server-container {
+  width: 100%;
+  height: 490px;
+
+  .server-content {
+    .pub-content;
+
+    height: 360px;
+
+    .serverlist {
+      display: none;
+      float: right;
+      width: 880px;
+      height: 100%;
+
+      h2 {
+        height: 45px;
+        line-height: 45px;
+      }
+
+      li {
+        position: relative;
+        float: left;
+        width: 33.3%;
+        height: 45px;
+        line-height: 45px;
+        padding-left: 15px;
+        font-size: 16px;
+        box-sizing: border-box;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 3px;
+          margin-top: -3px;
+          width: 6px;
+          height: 6px;
+          background-color: #eeac24;
+          border-radius: 50%;
+        }
+      }
+
+    }
+
+    .serverlist.select {
+      display: block;
+    }
+  }
+}
+
+/*专业人员栏目样式*/
+.team-container {
+  width: 100%;
+  height: 720px;
+
+  .team-content {
+    .pub-content;
+
+    height: 610px;
+
+    .teamlist {
+      display: none;
+      float: right;
+      width: 880px;
+      height: 100%;
+
+      li {
+        float: left;
+        width: 121px;
+        height: 150px;
+        margin-right: 43px;
+        margin-bottom: 5px;
+        font-size: 16px;
+        box-sizing: border-box;
+        overflow: hidden;
+
+        &:nth-child(5n) {
+          margin-right: 0;
+        }
+
+        img {
+          .pic;
+        }
+      }
+    }
+
+    .teamlist.select {
+      display: block;
+    }
+  }
+}
+
+/*成功案例栏目样式*/
+.case-container {
+  width: 100%;
+  height: 1312px;
+
+  .case-content {
+    .pub-content;
+
+    height: 1156px;
+
+    .caselist {
+      width: 100%;
+
+      li {
+        height: 96px;
+        line-height: 96px;
+        border-bottom: 1px solid #ddd;
+        overflow: hidden;
+        box-sizing: border-box;
+
+      }
+    }
+
+    a {
+      float: left;
+      display: block;
+      width: 970px;
+      color: #333;
+      font-size: 16px;
+      .transition();
+
+      &:hover {
+        color: #0080ff;
+      }
+    }
+
+    time {
+      float: right;
+      color: #9b9b9b;
+
+    }
+  }
+
+  .case-page {
+    width: 100%;
+
+    ul {
+      text-align: center;
+      height: 106px;
+      line-height: 106px;
+
+      li {
+        display: inline-block;
+        width: 26px;
+        height: 26px;
+        line-height: 26px;
+        color: #333;
+        cursor: pointer;
+
+        &:first-child {
+          width: 62px;
+        }
+        &:last-child {
+          width: 62px;
+        }
+
+        &.select {
+          color: #fff;
+          background-color: #eeac24;
+        }
+
+        &:hover {
+          color: #fff;
+          background-color: #eeac24;
+        }
+      }
+
+
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (min-width: 1344px){
+  /*如果屏幕大于了1343px了，固定每部分的最大宽度为1343px*/
+}
