@@ -47,20 +47,19 @@
             </li>
             <li class="bg-yellow">
                 <a href="server.html">服务项目</a>
-                <dl>
+                <dl class="server">
                     <dd><a href="javascript:;" target="_blank" title="商标">商标</a></dd>
                     <dd><a href="javascript:;" target="_blank" title="专利代理">专利代理</a></dd>
                     <dd><a href="javascript:;" target="_blank" title="版权">版权</a></dd>
-                    <dd><a href="javascript:;" target="_blank" title="高新技术认定">高新技术认定</a></dd>
-                    <dd><a href="javascript:;" target="_blank" title="专利检索分析">专利检索分析</a></dd>
-                    <dd><a href="javascript:;" target="_blank" title="知识产权培训">知识产权培训</a></dd>
-                    <dd><a href="javascript:;" target="_blank" title="贯标辅导">贯标辅导</a></dd>
+                    <dd><a href="javascript:;" target="_blank" title="创新服务">创新服务</a></dd>
+                    <dd><a href="javascript:;" target="_blank" title="企业服务">企业服务</a></dd>
+                    <dd><a href="javascript:;" target="_blank" title="税务服务">税务服务</a></dd>
                     <dd><a href="javascript:;" target="_blank" title="法律服务">法律服务</a></dd>
                 </dl>
             </li>
             <li>
                 <a href="team.html">专业人员</a>
-                <dl>
+                <dl class="team">
                     <dd><a href="javascript:;" target="_blank" title="高级合伙人">高级合伙人</a></dd>
                     <dd><a href="javascript:;" target="_blank" title="律师顾问">律师顾问</a></dd>
                     <dd><a href="javascript:;" target="_blank" title="商标代理">商标代理</a></dd>
@@ -72,7 +71,7 @@
             </li>
             <li>
                 <a href="javascript:;">新闻资讯</a>
-                <dl>
+                <dl class="news">
                     <dd><a href="javascript:;" target="_blank" title="企业新闻">企业新闻</a></dd>
                     <dd><a href="javascript:;" target="_blank" title="业界新闻">业界新闻</a></dd>
                     <dd><a href="javascript:;" target="_blank" title="近期活动">近期活动</a></dd>
@@ -80,8 +79,8 @@
                 </dl>
             </li>
             <li>
-                <a href="javascript:;">企业概况</a>
-                <dl>
+                <a href="about.html">企业概况</a>
+                <dl class="about">
                     <dd><a href="javascript:;" target="_blank" title="企业介绍">企业介绍</a></dd>
                     <dd><a href="javascript:;" target="_blank" title="企业文化">企业文化</a></dd>
                     <dd><a href="javascript:;" target="_blank" title="荣誉资质">荣誉资质</a></dd>
@@ -89,7 +88,7 @@
             </li>
             <li>
                 <a href="javascript:;">联系我们</a>
-                <dl>
+                <dl class="contact">
                     <dd><a href="javascript:;" target="_blank" title="联系我们">联系我们</a></dd>
                     <dd><a href="javascript:;" target="_blank" title="服务网格">服务网格</a></dd>
                     <dd><a href="javascript:;" target="_blank" title="招贤纳士">招贤纳士</a></dd>
@@ -273,18 +272,37 @@
 <script>
     $(function () {
         $('.server-content').pluginTab();
-    })
-</script>
-<script>
+    });
     $(function () {
         var url = window.location.search;
         var loc = url.substring(url.lastIndexOf('=')+1, url.length);
-        //console.log(typeof loc); //string
-        //console.log($('.tab dd').eq(loc).index()); //2
         $('.server-content').pluginTab({
             initIndex: loc
         });
-    })
+    });
+    $(function () {
+        $('.server dd').click(function () {
+            //上线之后改为http://www.sgxh.cn/sgxh/server.html
+            var _index = $(this).index();
+            window.location.href = 'http://localhost:63342/sgxh/server.html?index='+ _index;
+        });
+        $('.team dd').click(function () {
+            var _index = $(this).index();
+            window.location.href = 'http://localhost:63342/sgxh/team.html?index='+ _index;
+        });
+        $('.news dd').click(function () {
+            var _index = $(this).index();
+            window.location.href = 'http://localhost:63342/sgxh/news.html?index='+ _index;
+        });
+        $('.about dd').click(function () {
+            var _index = $(this).index();
+            window.location.href = 'http://localhost:63342/sgxh/about.html?index='+ _index;
+        });
+        $('.contact dd').click(function () {
+            var _index = $(this).index();
+            window.location.href = 'http://localhost:63342/sgxh/contact.html?index='+ _index;
+        });
+    });
 </script>
 </body>
 </html>
