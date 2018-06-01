@@ -29,6 +29,7 @@ html,body {
   font-size: 14px;
   color: #222;
   -webkit-user-select: none;
+  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;/*去除字体图标锯齿和模糊的情况*/
   -moz-osx-font-smoothing: grayscale;
 }
@@ -100,7 +101,8 @@ html,body {
           height: 22px;
           margin: 0 4px;
           border: none;
-          background: url("../images/serach-btn.png") no-repeat;
+          background: url("../images/sprite.png") no-repeat;
+          background-position: -2px -11px;
           cursor: pointer;
           vertical-align: middle;
         }
@@ -156,7 +158,7 @@ html,body {
             height: 35px;
             line-height: 35px;
             text-align: center;
-            background: url("../images/part2.jpg") repeat-x;
+            background: url("../images/nav-bg.jpg") repeat-x;
 
             a {
               font-size: 14px;
@@ -196,8 +198,8 @@ html,body {
     width: 25px;
     height: 25px;
     margin-right: 15px;
-    background: url("../images/qq-mark.png") no-repeat center;
-    background-size: cover;
+    background: url("../images/sprite.png");
+    background-position: -142px -8px;
   }
 
   .footer-wrap {
@@ -225,7 +227,7 @@ html,body {
 
     .link {
       float: right;
-      width: 200px;
+      width: 223px;
 
       h3 {
         &:extend(.footer .h3);
@@ -239,7 +241,8 @@ html,body {
         &:extend(.footer .qq-mark);
 
         position: relative;
-        background: url("../images/weixin-mark.png") no-repeat center;
+        background: url("../images/sprite.png");
+        background-position: -87px -8px;
 
         img {
           position: absolute;
@@ -262,7 +265,8 @@ html,body {
       .in-mark {
         &:extend(.footer .qq-mark);
 
-        background: url("../images/in-mark.png") no-repeat center;
+        background: url("../images/sprite.png");
+        background-position: -115px -8px;
       }
     }
   }
