@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>成功案例-北京盛广信合知识产权代理有限公司</title>
+    <title>成功案例详情-北京盛广信合知识产权代理有限公司</title>
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <meta name="keywords" content="商标驳回复审,商标异议答辩,专利检索分析">
@@ -67,11 +67,11 @@
                     <dd><a href="javascript:;" target="_blank" title="专利代理">专利代理</a></dd>
                 </dl>
             </li>
-            <li class="bg-yellow">
+            <li>
                 <a href="case.html">成功案例</a>
             </li>
             <li>
-                <a href="news.html">新闻资讯</a>
+                <a href="news.html" class="bg-yellow">新闻资讯</a>
                 <!--<dl>-->
                     <!--<dd><a href="javascript:;" target="_blank" title="企业新闻">企业新闻</a></dd>-->
                     <!--<dd><a href="javascript:;" target="_blank" title="业界新闻">业界新闻</a></dd>-->
@@ -100,78 +100,14 @@
 </header>
 <!--header end-->
 
-<!--bannner begin-->
-<div class="banner">
-    <img src="images/case-banner.jpg" alt="成功案例-北京盛广信合知识产权代理有限公司">
-</div>
-<!--bannner end-->
-
 <!--caselist begin-->
-<section class="case-container">
+<section class="detail-container">
     <p class="crumbs">
         <a href="index.html">首页 ></a>
         <a href="case.html">成功案例</a>
     </p>
-    <div class="case-content">
-        <ul class="caselist" id="caselist">
-            <!--<li class="clearfix">-->
-                <!--<a href="javascript:;">关于“14885753”号调皮熊商标注册成功案例</a>-->
-                <!--<time>2016-04-28</time>-->
-            <!--</li>-->
-            <!--<li class="clearfix">-->
-                <!--<a href="javascript:;">第“14992632”号Lawwa商标注册成功案例</a>-->
-                <!--<time>2016-04-28</time>-->
-            <!--</li>-->
-            <!--<li class="clearfix">-->
-                <!--<a href="javascript:;">关于“14884696”号韩菊商标注册成功案例</a>-->
-                <!--<time>2016-04-28</time>-->
-            <!--</li>-->
-            <!--<li class="clearfix">-->
-                <!--<a href="javascript:;">关于“14885753”号调皮熊商标注册成功案例</a>-->
-                <!--<time>2016-04-28</time>-->
-            <!--</li>-->
-            <!--<li class="clearfix">-->
-                <!--<a href="javascript:;">第10类MEDICOM及图商标异议答辩通知</a>-->
-                <!--<time>2016-04-28</time>-->
-            <!--</li>-->
-            <!--<li class="clearfix">-->
-                <!--<a href="javascript:;">黄骅市华威工贸异议答辩通知</a>-->
-                <!--<time>2016-04-28</time>-->
-            <!--</li>-->
-            <!--<li class="clearfix">-->
-                <!--<a href="javascript:;">赣州松凌电子科技异议答辩通知书</a>-->
-                <!--<time>2016-04-28</time>-->
-            <!--</li>-->
-            <!--<li class="clearfix">-->
-                <!--<a href="javascript:;">河南拉瓦医疗技术商标异议答辩通知书</a>-->
-                <!--<time>2016-04-28</time>-->
-            <!--</li>-->
-            <!--<li class="clearfix">-->
-                <!--<a href="javascript:;">北京正本源医药科技商标异议答辩通知书</a>-->
-                <!--<time>2016-04-28</time>-->
-            <!--</li>-->
-            <!--<li class="clearfix">-->
-                <!--<a href="javascript:;">千里马装饰商标异议答辩通知书</a>-->
-                <!--<time>2016-04-28</time>-->
-            <!--</li>-->
-            <!--<li class="clearfix">-->
-                <!--<a href="javascript:;">张家港博视影视器材商标异议答辩通知书</a>-->
-                <!--<time>2016-04-28</time>-->
-            <!--</li>-->
-            <!--<li class="clearfix">-->
-                <!--<a href="javascript:;">石狮奇宾贸易异议答辩通知书</a>-->
-                <!--<time>2016-04-28</time>-->
-            <!--</li>-->
-        </ul>
-    </div>
-    <div class="case-page">
-        <ul>
-            <li class="pageprev">上一页</li>
-            <li class="page1 select">1</li>
-            <li class="page2">2</li>
-            <li class="page3">3</li>
-            <li class="pagenext">下一页</li>
-        </ul>
+    <div class="detail-content" id="detail-content">
+
     </div>
 </section>
 <!--caselist end-->
@@ -217,89 +153,6 @@
 <script src="js/nav-slide.js"></script>
 <script>
     $(function () {
-        function bindData(result) {
-            if(result.error === 0){
-                var data = result["data"];
-                //console.log(data);
-                var str = ``;
-                var oLi = ``;
-                for (var i=0;i<data.length;i++){
-                    var curtime = data[i].time,
-                        curtitle = data[i].title;
-                    oLi += `<li class="clearfix">
-                                    <a href="javascript:;">${curtitle}</a>
-                                    <time>${curtime}</time>
-                                </li>
-                                `;
-                }
-                str += oLi;
-                $('#caselist').html(str);
-            }
-        }
-        function getData(_index) {
-            $.ajax({
-                type: 'GET',
-                url: './json/caseData'+_index+'.json',
-                cache: false,
-                dataType: 'json',
-                async: false,
-                success: function (result) {
-                    bindData(result)
-                },
-                error: function (result) { // 错误回调
-                    alert('请重新刷新页面！');
-                }
-            });
-            //数据请求回来后绑定点击事件li
-            $('.caselist li').click(function () {
-                var caseId = $(this).index();
-                var pageId = _index;
-                window.location.href = './case-detail.html?pageid='+ pageId+'&caseid='+ caseId;
-            });
-        }
-        getData(1); //页面刚加载执行getData(1)来请求数据
-        //分页
-        $('.page1').click(function () {
-            var _index = $(this).index();
-            getData(_index);
-            $(this).addClass('select').siblings().removeClass('select')
-        });
-
-        $('.page2').click(function () {
-            var _index = $(this).index();
-            getData(_index);
-            $(this).addClass('select').siblings().removeClass('select')
-        });
-
-        $('.page3').click(function () {
-            var _index = $(this).index();
-            getData(_index);
-            $(this).addClass('select').siblings().removeClass('select')
-        });
-
-        $('.pageprev').click(function () {
-            var _index = $(this).siblings('.select').index() -1;
-            $(this).siblings('.select').removeClass('select').prev().addClass('select');
-            if (_index < 1){
-                _index = 1;
-                $(this).removeClass('select');
-                $('.page1').addClass('select');
-            }
-            getData(_index);
-        });
-        $('.pagenext').click(function () {
-            var _index = $(this).siblings('.select').index() +1;
-            $(this).siblings('.select').removeClass('select').next().addClass('select');
-            if (_index > 3){
-                _index = 3;
-                $(this).removeClass('select');
-                $('.page3').addClass('select');
-            }
-            getData(_index);
-        })
-    });
-
-    $(function () {
         $('.server dd').click(function () {
             //上线之后改为http://www.sgxh.cn/sgxh/server.html
             var _index = $(this).index();
@@ -321,6 +174,47 @@
             var _index = $(this).index();
             window.location.href = './contact.html?index='+ _index;
         });
+    });
+
+    $(function () {
+        String.prototype.myQueryURLParameter = function myQueryURLParameter() {
+            var obj = {};
+            this.replace(/([^?&=#]+)=([^?&=#]+)/g, function () {
+                obj[arguments[1]] = arguments[2];
+            });
+            this.replace(/#([^?=&#]+)/g, function () {
+                obj['HASH'] = arguments[1];
+            });
+            return obj;
+        };
+        var caseurl = window.location.href,
+            caseObj = caseurl.myQueryURLParameter(),
+            caseId = Number(caseObj['caseid']);
+            pageId = Number(caseObj['pageid']);
+
+        $.ajax({
+            type: 'GET',
+            url: './json/caseData' + pageId +'.json',
+            cache: false,
+            dataType: 'json',
+            async: true,
+            success: function (result) {
+                if(result.error === 0){ // 判断响应回来的数据是否正确
+                    var data = result["data"];
+                    var str = ``;
+                    var strIMG = ``;
+                    str +=`<h2>${data[caseId].title}</h2>
+                            <time>${data[caseId].time}</time>
+                            <figure><img src="${data[caseId].img}" alt=""></figure>
+                            `;
+                    $('#detail-content').html(str);
+                }
+            },
+            error: function (result) { // 错误回调
+                alert('请重新刷新页面！');
+            }
+        });
+
     });
 </script>
 </body>
