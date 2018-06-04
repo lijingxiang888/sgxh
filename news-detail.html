@@ -177,16 +177,27 @@
     });
 
     $(function () {
-        var url = window.location.search;
-        var newsId = url.substring(url.lastIndexOf('=')+1, url.length);
+        String.prototype.myQueryURLParameter = function myQueryURLParameter() {
+            var obj = {};
+            this.replace(/([^?&=#]+)=([^?&=#]+)/g, function () {
+                obj[arguments[1]] = arguments[2];
+            });
+            this.replace(/#([^?=&#]+)/g, function () {
+                obj['HASH'] = arguments[1];
+            });
+            return obj;
+        };
+        var newsurl = window.location.href,
+            newsObj = newsurl.myQueryURLParameter(),
+            newsId = Number(newsObj['newsid']);
+            pageId = Number(newsObj['pageid']);
 
         $.ajax({
             type: 'GET',
-            url: './json/newsData.json', // 请求url地址 请求接口地址（https://www.baidu.com/s?） (./data.json/s?wd=liwenli&uid=1)
+            url: './json/newsData' + pageId +'.json',
             cache: false,
             dataType: 'json',
-            async: true,  // 默认true 异步请求
-            // 请求成功后回调 第一个形参 就是 请求成功返回的数据
+            async: true,
             success: function (result) {
                 if(result.error === 0){ // 判断响应回来的数据是否正确
                     var data = result["data"];
@@ -197,17 +208,12 @@
                             <time>${data[newsId].time}</time>
                             `;
                     for (var i=0;i<data[newsId].con.length;i++){
-                        var curP = data[newsId].con[i];
+                        var curP = data[newsId].con[i],
+                            curIMG = data[newsId].img[i];
 
-                        strP += `<p>${curP}</p>`;
-
-                        for (var k=0;k<data[newsId].img.length;k++){
-                            var curIMG = data[newsId].img[k];
-                            strP += `<figure><img src="${curIMG}" alt=""></figure>`;
-                            if (i > data[newsId].img.length){
-                                break;//结束当前循环
-                            }
-                        }
+                        strP += `<p>${curP}</p>
+                                <figure><img src="${curIMG}" alt=""></figure>
+                                `;
                         //段落的length大于了图片的length，循环绑定img时候找不到img会报错，undefined
                     }
                     str += strP;

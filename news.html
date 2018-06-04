@@ -113,64 +113,17 @@
         <a href="news.html">新闻资讯</a>
     </p>
     <div class="news-content">
-        <ul class="newslist">
-            <li class="clearfix">
-                <a href="javascript:;">北京盛广信合知识产权代理有限公司保定分公司与航标军民融合众创空间珠联璧合 相辅相成</a>
-                <time>2018-05-28</time>
-            </li>
-            <li class="clearfix">
-                <a href="javascript:;">国内人工智能专利布局存隐忧</a>
-                <time>2018-05-28</time>
-            </li>
-            <li class="clearfix">
-                <a href="javascript:;">360上市后专利保护第一枪 两地连诉2345索赔6000万</a>
-                <time>2018-05-28</time>
-            </li>
-            <li class="clearfix">
-                <a href="javascript:;">相互购买专利：5G标准是如何确立的？</a>
-                <time>2018-05-28</time>
-            </li>
-            <li class="clearfix">
-                <a href="javascript:;">实用新型审查从严！审查周期加长到7-14个月</a>
-                <time>2018-05-28</time>
-            </li>
-            <li class="clearfix">
-                <a href="javascript:;">MOTO 可折叠专利曝光:随时变身平板</a>
-                <time>2018-05-10</time>
-            </li>
-            <li class="clearfix">
-                <a href="javascript:;">隔壁老王申请成功！MLGB商标被驳冤不冤？</a>
-                <time>2018-05-10</time>
-            </li>
-            <li class="clearfix">
-                <a href="javascript:;">2017年全省首次认定高新技术企业拟补助名单公示啦</a>
-                <time>2018-05-10</time>
-            </li>
-            <li class="clearfix">
-                <a href="javascript:;">酷派告小米，一堂生动的“专利课”书</a>
-                <time>2018-05-9</time>
-            </li>
-            <li class="clearfix">
-                <a href="javascript:;">降龙三招破敌！陷入内外合击的白酒中小品牌，不仅要“求温饱”，还要活得好</a>
-                <time>2018-05-9</time>
-            </li>
-            <li class="clearfix">
-                <a href="javascript:;">“谁的好医生”不厘清，中国品牌将陷入恶性循环</a>
-                <time>2018-05-9</time>
-            </li>
-            <li class="clearfix">
-                <a href="javascript:;">4.26世界知识产权日 京津冀知识产权运营高峰论坛成功举办</a>
-                <time>2018-04-27</time>
-            </li>
+        <ul class="newslist" id="newslist">
+
         </ul>
     </div>
     <div class="news-page">
         <ul>
-            <li>上一页</li>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>下一页</li>
+            <li class="pageprev">上一页</li>
+            <li class="page1 select">1</li>
+            <li class="page2">2</li>
+            <li class="page3">3</li>
+            <li class="pagenext">下一页</li>
         </ul>
     </div>
 </section>
@@ -217,8 +170,92 @@
 <script src="js/nav-slide.js"></script>
 <script>
     $(function () {
+        function bindData(result) {
+            if(result.error === 0){
+                var data = result["data"];
+                //console.log(data);
+                var str = ``;
+                var oLi = ``;
+                for (var i=0;i<data.length;i++){
+                    var curtime = data[i].time,
+                        curtitle = data[i].title;
+
+                    oLi += `<li class="clearfix">
+                                    <a href="javascript:;">${curtitle}</a>
+                                    <time>${curtime}</time>
+                                </li>
+                                `;
+                }
+                str += oLi;
+                $('#newslist').html(str);
+            }
+        }
+        function getData(_index) {
+            $.ajax({
+                type: 'GET',
+                url: './json/newsData'+_index+'.json',
+                cache: false,
+                dataType: 'json',
+                async: false,
+                // 请求成功后回调 第一个形参 就是 请求成功返回的数据
+                success: function (result) {
+                    bindData(result)
+                },
+                error: function (result) { // 错误回调
+                    alert('请重新刷新页面！');
+                }
+            });
+            //数据请求回来后绑定点击事件li
+            $('.newslist li').click(function () {
+                var newsId = $(this).index();
+                var pageId = _index;
+                window.location.href = './news-detail.html?pageid='+ pageId+'&newsid='+ newsId;
+            });
+        };
+        getData(1); //页面刚加载执行getData(1)来请求数据
+        //分页
+        $('.page1').click(function () {
+            var _index = $(this).index();
+            getData(_index);
+            $(this).addClass('select').siblings().removeClass('select')
+        });
+
+        $('.page2').click(function () {
+            var _index = $(this).index();
+            getData(_index);
+            $(this).addClass('select').siblings().removeClass('select')
+        });
+
+        $('.page3').click(function () {
+            var _index = $(this).index();
+            getData(_index);
+            $(this).addClass('select').siblings().removeClass('select')
+        });
+
+        $('.pageprev').click(function () {
+            var _index = $(this).siblings('.select').index() -1;
+            $(this).siblings('.select').removeClass('select').prev().addClass('select');
+            if (_index < 1){
+                _index = 1;
+                $(this).removeClass('select');
+                $('.page1').addClass('select');
+            }
+            getData(_index);
+        });
+        $('.pagenext').click(function () {
+            var _index = $(this).siblings('.select').index() +1;
+            $(this).siblings('.select').removeClass('select').next().addClass('select');
+            if (_index > 3){
+                _index = 3;
+                $(this).removeClass('select');
+                $('.page3').addClass('select');
+            }
+            getData(_index);
+        })
+    });
+
+    $(function () {
         $('.server dd').click(function () {
-            //上线之后改为http://www.sgxh.cn/sgxh/server.html
             var _index = $(this).index();
             window.location.href = './server.html?index='+ _index;
         });
@@ -238,11 +275,8 @@
             var _index = $(this).index();
             window.location.href = './contact.html?index='+ _index;
         });
-        $('.newslist li').click(function () {
-            var newsId = $(this).index();
-            window.location.href = './news-detail.html?newsid='+ newsId;
-        })
     });
+
 </script>
 </body>
 </html>
