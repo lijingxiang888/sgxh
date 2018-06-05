@@ -36,11 +36,18 @@ html,body {
 
 .header {
   width: 100%;
+  @media all and (min-width:1366px) {
+    width: 1366px;
+    margin: 0 auto;
+  }
 
   .header-wrap {
     height: 100px;
     width: 1105px;
     margin: 0 auto;
+    @media all and (max-width:1024px) {
+      width: 970px;
+    }
 
     .logo-box {
       float: left;
@@ -119,6 +126,9 @@ html,body {
       width: 1105px;
       height: 44px;
       margin: 0 auto;
+      @media all and (max-width:1024px) {
+        width: 970px;
+      }
 
       .bg-yellow {
         background: #eeac24;
@@ -132,6 +142,9 @@ html,body {
         line-height: 44px;
         text-align: center;
         background: url("../images/part.jpg") no-repeat center right;
+        @media all and (max-width:1024px) {
+          width: 138px;
+        }
 
         a {
           display: block;
@@ -153,6 +166,9 @@ html,body {
           width: 155px;
           height: auto;
           z-index: 20;
+          @media all and (max-width:1024px) {
+            width: 138px;
+          }
 
           dd {
             height: 35px;
@@ -176,6 +192,10 @@ html,body {
   width: 100%;
   height: 285px;
   overflow: hidden;
+  @media all and (min-width:1366px) {
+    width: 1366px;
+    margin: 0 auto;
+  }
 }
 
 .footer {
@@ -185,6 +205,10 @@ html,body {
   background-color: #f0f0f0;
   overflow: hidden;
   box-sizing: border-box;
+  @media all and (min-width:1366px) {
+    width: 1366px;
+    margin: 0 auto;
+  }
 
   .h3 {
     padding: 10px 0;
@@ -206,10 +230,16 @@ html,body {
     width: 1105px;
     height: 180px;
     margin: 0 auto;
+    @media all and (max-width:1024px) {
+      width: 970px;
+    }
 
     .adderss {
       float: left;
       width: 320px;
+      @media all and (max-width:1024px) {
+        width: 290px;
+      }
 
       h3 {
         &:extend(.footer .h3);
@@ -219,6 +249,9 @@ html,body {
     .news-tip {
       float: left;
       width: 460px;
+      @media all and (max-width:1024px) {
+        width: 380px;
+      }
 
       h3 {
         &:extend(.footer .h3);
@@ -282,8 +315,4 @@ html,body {
       color: #fff;
     }
   }
-}
-
-@media all and (min-width: 1344px){
-  /*如果屏幕大于了1343px了，固定每部分的最大宽度为1343px*/
 }

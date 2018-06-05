@@ -7,6 +7,17 @@
   line-height: 50px;
   padding: 0 122px;
   box-sizing: border-box;
+  @media all and (max-width:1280px) {
+    padding: 0 79px;
+  }
+  @media all and (max-width:1024px) {
+    padding: 0 19px;
+  }
+  @media all and (min-width:1366px) {
+    width: 1105px;
+    margin: 0 auto;
+    padding: 0;
+  }
 
   a {
     .transition();
@@ -24,11 +35,17 @@
   height: auto;
   margin: 0 auto;
   overflow: hidden;
+  @media all and (max-width:1024px) {
+    width: 970px;
+  }
 
   dl {
     float: left;
     width: 180px;
     background-color: #eee;
+    @media all and (max-width:1024px) {
+      width: 160px;
+    }
     dd {
       height: 45px;
       width: 100%;
@@ -59,6 +76,9 @@
   line-height: 45px;
   font-size: 18px;
   font-weight: normal;
+  @media all and (max-width:1024px) {
+    font-size: 16px;
+  }
 }
 /*服务项目栏目样式*/
 .server-container {
@@ -75,6 +95,9 @@
       float: right;
       width: 880px;
       height: 100%;
+      @media all and (max-width:1024px) {
+        width: 770px;
+      }
 
       h2 {
         &:extend(.h2);
@@ -126,6 +149,9 @@
       float: right;
       width: 880px;
       height: 100%;
+      @media all and (max-width:1024px) {
+        width: 770px;
+      }
 
       li {
         float: left;
@@ -136,10 +162,14 @@
         font-size: 16px;
         box-sizing: border-box;
         overflow: hidden;
+        @media all and (max-width:1024px) {
+          width: 119px;
+        }
 
         &:nth-child(5n) {
           margin-right: 0;
         }
+
 
         img {
           .pic;
@@ -182,6 +212,10 @@
       color: #333;
       font-size: 16px;
       .transition();
+      overflow: hidden;
+      @media all and (max-width:1024px) {
+        width: 840px;
+      }
 
       &:hover {
         color: #0080ff;
@@ -251,6 +285,9 @@
       float: right;
       width: 880px;
       height: 100%;
+      @media all and (max-width:1024px) {
+        width: 770px;
+      }
 
       h2 {
         &:extend(.h2);
@@ -295,6 +332,9 @@
       float: right;
       width: 880px;
       height: 100%;
+      @media all and (max-width:1024px) {
+        width: 770px;
+      }
 
       h2 {
         &:extend(.h2);
@@ -362,6 +402,10 @@
       color: #333;
       font-size: 16px;
       .transition();
+      overflow: hidden;
+      @media all and (max-width:1024px) {
+        width: 840px;
+      }
 
       &:hover {
         color: #0080ff;
@@ -421,6 +465,9 @@
     width: 1105px;
     margin: 0 auto;
     margin-bottom: 50px;
+    @media all and (max-width:1024px) {
+      width: 970px;
+    }
 
     h2 {
       width: 100%;

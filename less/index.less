@@ -5,6 +5,10 @@
   width: 100%;
   height: 285px;
   overflow: hidden;
+  @media all and (min-width:1366px) {
+    width: 1366px;
+    margin: 0 auto;
+  }
 
   .bannerInner {
     width: 100%;
@@ -87,6 +91,9 @@
   width: 1105px;
   height: 348px;
   margin: 30px auto;
+  @media all and (max-width:1024px) {
+    width: 970px;
+  }
 
   .title {
     width: 100%;
@@ -113,7 +120,9 @@
     float: left;
     width: 313px;
     height: 100%;
-    //background-color: blue;
+    @media all and (max-width:1024px) {
+      width: 280px;
+    }
 
     .tit {
       .title;
@@ -161,6 +170,10 @@
     width: 381px;
     height: 100%;
     margin-left: 48px;
+    @media all and (max-width:1024px) {
+      width: 346px;
+      margin-left: 30px;
+    }
 
     .tit {
       .title;
@@ -171,6 +184,17 @@
     }
     .person-cont {
       margin-top: 10px;
+
+      img {
+        .pic;
+      }
+
+      p {
+        margin-top: 3px;
+        @media all and (max-width:1024px) {
+          margin-top: 28px;
+        }
+      }
     }
   }
 
@@ -178,6 +202,9 @@
     float: right;
     width: 313px;
     height: 100%;
+    @media all and (max-width:1024px) {
+      width: 280px;
+    }
 
     .tit {
       .title;
